@@ -1,0 +1,43 @@
+/*
+XOR Permunation Cypher
+This algorithm takes a key and 
+
+*/
+// Pull header file containing key
+//#include <bits/stdc++.h> 
+#include <iostream>
+
+
+void encryptDecrypt (char inpString[]) // Same function is used to decrypt / encrypt
+{
+    char xorKey = ' P '; 
+
+    int len = strlen(inpString);
+    for (int i = 0; i < len; i++)
+    {
+        inpString[i] = inpString[i] ^ xorKey;
+        printf("%c" , inpString [i]); 
+
+    }
+
+
+
+
+}
+int main()
+{
+    //sample string that will be encrypted or decrypted 
+    char sampleString[] = "CatDog21";
+
+    // Encrypt the string 
+    printf("Encrypted String: "); 
+    encryptDecrypt (sampleString);
+    printf("\n");
+
+    // Decrypt String 
+    printf("Decrypted String: ");
+    encryptDecrypt(sampleString);
+
+    return 0; 
+
+}
