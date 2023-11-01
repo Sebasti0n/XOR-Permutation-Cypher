@@ -1,6 +1,8 @@
-#include <bits/stdc++.h> 
+#include <iostream>
 
-void encryptDepcrypt(char inpString[]) 
+using namespace std; 
+
+void encryptDecrypt(char inpString[]) 
 {
 
 	char xorKey = 'K'; 
@@ -19,7 +21,7 @@ int main()
 
 	//Encrypt the string
 	printf("Encryted String: "); 
-	encryptDecrpyt(sampleString); 
+	encryptDecrypt(sampleString); 
 	printf("\n"); 
 
 	//Decprypt the string 
